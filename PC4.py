@@ -32,7 +32,34 @@
 # Este código sirve para hacer un primer programa en Streamlit.
 import streamlit as st
 
+st.markdown("""
+    <style>
+        /* Color del fondo general */
+        .stApp {
+            background-color:#BFA980;
+        }
 
+        /* Color de la barra lateral */
+        section[data-testid="stSidebar"] {
+            background-color: #59573B;
+        }
+
+        /* Títulos principales */
+        h1 {
+            color: #F5F7F8;
+        }
+
+        /* Subtítulos */
+        h2 {
+            color: #182625;
+        }
+
+        /* Texto general */
+        p, div, span {
+            color:  #182625;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 
 # Generamos 3 páginas en la aplicación web de Streamlit.
