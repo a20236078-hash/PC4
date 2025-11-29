@@ -213,7 +213,7 @@ else:
     graficos = ['Mapa', 'Gráfico Pastel Real Madrid', 'Histograma', 'Grafico Pastel Barcelona']
 
     # Creamos un cuadro de selección en la página de gráficos
-    grafico_seleccionado = st.selectbox('Gráfico Pastel', graficos)
+    grafico_seleccionado = st.selectbox('Graficos de Mateo Angeles', graficos)
 
     # El cuadro de selección se crea con la función selectbox.
     # El primer argumento es el texto que se muestra en el cuadro de selección.
@@ -274,5 +274,6 @@ else:
         # Mostrar el mapa en Streamlit
         #st_folium(mapa_cusco, width=700, height=500)
     
+
 
 
