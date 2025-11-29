@@ -149,16 +149,15 @@ elif  pagina_seleccionada == 'Experiencia':
 
     # Agregar un  texto para la respuesta
     texto_2 = """
-   Aprender a programar no estaba para nada en mis planes de este año
-   en un principio no entendia nada, es como empezar de cero un nuevo mundo
-   basicamente se siente como aprender otro idioma desde el inicio con nuevas reglas y funciones.
-   Sin embargo con el tiempo y practica, he logrado superar mis propias expectativas, he aprendido
-   a realizar pequeños codigos con funciones muy utiles, o juegos simples como piedra papel o tijera.
-   En lo personal lo que mas me ha gustado de programar, es como me ha permitido entender de mejor 
-   manera como funcionan todos los recursos tecnologicos que uso a diario, ya no son solo codigos que no entiendo,
-   sino que tengo un mejor entendimiento de los procesos por los cuales opera el mundo. Con esto en mente me gustaria 
-   aprender a desarrollar videojuegos simples, siento que seria un proyecto interesante, distinto y divertido.
-    
+    Aprender a programar no estaba para nada en mis planes de este año
+    en un principio no entendia nada, es como empezar de cero un nuevo mundo
+    basicamente se siente como aprender otro idioma desde el inicio con nuevas reglas y funciones.
+    Sin embargo con el tiempo y practica, he logrado superar mis propias expectativas, he aprendido
+    a realizar pequeños codigos con funciones muy utiles, o juegos simples como piedra papel o tijera.
+    En lo personal lo que mas me ha gustado de programar, es como me ha permitido entender de mejor 
+    manera como funcionan todos los recursos tecnologicos que uso a diario, ya no son solo codigos que no entiendo,
+    sino que tengo un mejor entendimiento de los procesos por los cuales opera el mundo. Con esto en mente me gustaria 
+    aprender a desarrollar videojuegos simples, siento que seria un proyecto interesante, distinto y divertido.
     """
     # Mostramos el texto
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_2}</div>", unsafe_allow_html=True)
@@ -217,7 +216,7 @@ else:
     st.markdown("<h1 style='text-align: center;'>Graficos del Curso</h1>", unsafe_allow_html=True)
 
     # Creamos una lista de gráficos
-    graficos = ['Mapa', 'Gráfico Pastel', 'Histograma', 'Grafico Pastel visitante']
+    graficos = ['Gráfico Pastel', 'Histograma', 'Grafico Pastel visitante','Mapa', ]
 
     # Creamos un cuadro de selección en la página de gráficos
     grafico_seleccionado = st.selectbox('Gráfico Pastel', graficos)
@@ -280,4 +279,5 @@ else:
 
         # Mostrar el mapa en Streamlit
         #st_folium(mapa_cusco, width=700, height=500)
+
     
