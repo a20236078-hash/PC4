@@ -1,13 +1,10 @@
 # Antes de ejecutar un script de Python en Streamlit debes definir la carpeta donde se encuentra tus archivos
 # cd ruta_de_tu_carpeta 
 # o abrimos el folder desde visual Studio Code 
-
-
 # Primero creamos un entorno virtual para instalar Streamlit y otras librerías que necesitemos.
 # python -m venv .venv
 # Esto nos permite crear un entorno virtual donde instalaremos Streamlit 
 # y observaremos la página web que se está generando en este script.
-
 # Luego activamos el entorno virtual.
 # En Windows:
 # .venv\Scripts\activate
@@ -61,7 +58,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-
 # Generamos 3 páginas en la aplicación web de Streamlit.
 # Generamos una página principal, otra donde contaran su experiencia aprendiendo a programar y una tercera donde presentarán sus gráficos.
 
@@ -99,7 +95,7 @@ if pagina_seleccionada == 'Inicio':
     # Las columnas creadas se asignan a las variables col1 y col2.
 
     # En la primera columna colocamos la imagen de perfil
-    col1.image("tlou.jpg", caption='que', width=300)
+    col1.image("tlou.jpg", caption='Mateo Angeles con lentes', width=300)
 
     # col1.image("ellie.png", caption='Ellie', width=300): Esta línea está colocando una imagen en la primera columna (col1). 
     # La función image toma como primer argumento el nombre del archivo de la imagen que se desea mostrar. 
@@ -120,9 +116,7 @@ if pagina_seleccionada == 'Inicio':
     a otras personas. En un futuro me gustaría vivir en el campo, alejado de la ciudad y la bulla, me agrada la idea 
     de tener animales y una linda casa en medio del valle. Por otro lado en mi tiempo libre me gusta practicar voley, 
     actualmente juego con la selección de la universidad y el club Sparks de Surco, ademas me gustan los videojuegos y 
-    ver películas o series.
-    """
-
+    ver películas o series."""
     # Las comillas triples (""") en Python se utilizan para definir cadenas multilínea.
     
     # Mostramos el texto
@@ -157,8 +151,7 @@ elif  pagina_seleccionada == 'Experiencia':
    En lo personal lo que mas me ha gustado de programar, es como me ha permitido entender de mejor 
    manera como funcionan todos los recursos tecnologicos que uso a diario, ya no son solo codigos que no entiendo,
    sino que tengo un mejor entendimiento de los procesos por los cuales opera el mundo. Con esto en mente me gustaria 
-   aprender a desarrollar videojuegos simples, siento que seria un proyecto interesante, distinto y divertido.
-    
+   aprender a desarrollar videojuegos simples, siento que seria un proyecto interesante, distinto y divertido. 
     """
     # Mostramos el texto
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_2}</div>", unsafe_allow_html=True)
@@ -281,3 +274,4 @@ else:
         # Mostrar el mapa en Streamlit
         #st_folium(mapa_cusco, width=700, height=500)
     
+
