@@ -51,12 +51,12 @@ st.markdown("""
 
         /* Subtítulos */
         h2 {
-            color: #F5F7F8;
+            color: #182625;
         }
 
         /* Texto general */
         p, div, span {
-            color: #F5F7F8;
+            color:  #182625;
         }
     </style>
 """, unsafe_allow_html=True)
@@ -149,15 +149,16 @@ elif  pagina_seleccionada == 'Experiencia':
 
     # Agregar un  texto para la respuesta
     texto_2 = """
-    Aprender a programar no estaba para nada en mis planes de este año
-    en un principio no entendia nada, es como empezar de cero un nuevo mundo
-    basicamente se siente como aprender otro idioma desde el inicio con nuevas reglas y funciones.
-    Sin embargo con el tiempo y practica, he logrado superar mis propias expectativas, he aprendido
-    a realizar pequeños codigos con funciones muy utiles, o juegos simples como piedra papel o tijera.
-    En lo personal lo que mas me ha gustado de programar, es como me ha permitido entender de mejor 
-    manera como funcionan todos los recursos tecnologicos que uso a diario, ya no son solo codigos que no entiendo,
-    sino que tengo un mejor entendimiento de los procesos por los cuales opera el mundo. Con esto en mente me gustaria 
-    aprender a desarrollar videojuegos simples, siento que seria un proyecto interesante, distinto y divertido.
+   Aprender a programar no estaba para nada en mis planes de este año
+   en un principio no entendia nada, es como empezar de cero un nuevo mundo
+   basicamente se siente como aprender otro idioma desde el inicio con nuevas reglas y funciones.
+   Sin embargo con el tiempo y practica, he logrado superar mis propias expectativas, he aprendido
+   a realizar pequeños codigos con funciones muy utiles, o juegos simples como piedra papel o tijera.
+   En lo personal lo que mas me ha gustado de programar, es como me ha permitido entender de mejor 
+   manera como funcionan todos los recursos tecnologicos que uso a diario, ya no son solo codigos que no entiendo,
+   sino que tengo un mejor entendimiento de los procesos por los cuales opera el mundo. Con esto en mente me gustaria 
+   aprender a desarrollar videojuegos simples, siento que seria un proyecto interesante, distinto y divertido.
+    
     """
     # Mostramos el texto
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_2}</div>", unsafe_allow_html=True)
@@ -216,7 +217,7 @@ else:
     st.markdown("<h1 style='text-align: center;'>Graficos del Curso</h1>", unsafe_allow_html=True)
 
     # Creamos una lista de gráficos
-    graficos = ['Gráfico Pastel', 'Histograma', 'Grafico Pastel visitante','Mapa', ]
+    graficos = ['Mapa', 'Gráfico Pastel Real Madrid', 'Histograma', 'Grafico Pastel Barcelona']
 
     # Creamos un cuadro de selección en la página de gráficos
     grafico_seleccionado = st.selectbox('Gráfico Pastel', graficos)
@@ -230,20 +231,20 @@ else:
     
 
     # Mostramos el gráfico seleccionado
-    if grafico_seleccionado == 'Gráfico Pastel':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aca se muestran los porcentajes</div>", unsafe_allow_html=True)
-        st.image("grafico_pastel_2.png", caption='Gráfico de Equipos', width=500)
+    if grafico_seleccionado == 'Gráfico Pastel Real Madrid':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>El siguiente gráfico de pastel presenta la distribución estadística de los resultados obtenidos por el club profesional Real Madrid en sus partidos oficiales. En él se distinguen las proporciones de encuentros ganados, empatados y perdidos, tanto en condición de local —jugando en su estadio— como en calidad de visitante, en campo rival. Esta representación visual permite observar de manera clara el peso relativo de cada tipo de resultado y posibilita un análisis comparativo del desempeño del equipo según la localía, evidenciando sus tendencias de rendimiento en diferentes contextos de juego.</div>", unsafe_allow_html=True)
+        st.image("grafico_pastel_2.png", caption='Gráfico del Real Madrid el más grande', width=500)
         pass
     elif grafico_seleccionado == 'Histograma':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
-        st.image("histograma.png", caption='Gráfico de familias lingüísticas', width=500)
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Los histogramas presentados permiten observar la distribución de distintos tipos de goles del club profesional de fútbol Real Madrid. El primer gráfico muestra la frecuencia con la que el equipo anotó goles jugando como local, ofreciendo una visión general de su desempeño ofensivo en casa. El segundo histograma representa la distribución de los goles que el equipo recibió también en condición de local, lo que posibilita evaluar su solidez defensiva en ese contexto. De manera complementaria, el tercer gráfico expone cuántos goles anotó el Real Madrid cuando jugó como visitante, evidenciando su capacidad ofensiva fuera de casa. Finalmente, el cuarto histograma detalla la distribución de los goles recibidos en condición de visitante, proporcionando información sobre el rendimiento defensivo del equipo lejos de su estadio. En conjunto, estos cuatro gráficos permiten comparar patrones de desempeño ofensivo y defensivo según la localía, así como identificar tendencias relevantes en su comportamiento durante la temporada analizada..</div>", unsafe_allow_html=True)
+        st.image("histograma.png", caption='Histogramas', width=500)
         pass
-    elif grafico_seleccionado == 'Grafico Pastel visitante':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
-        st.image("grafico_pastel_1.png", caption='Gráfico de familias lingüísticas', width=500)
+    elif grafico_seleccionado == 'Grafico Pastel Barcelona':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>El gráfico de pastel presentado ilustra de manera comparativa el desempeño del club Barcelona tanto en condición de local como de visitante. En él se representan las proporciones correspondientes a los partidos ganados, empatados y perdidos, permitiendo visualizar con claridad la distribución de resultados obtenidos en cada escenario. Esta representación facilita identificar tendencias de rendimiento, diferencias entre ambas condiciones de juego y el peso relativo de cada tipo de resultado dentro del total de encuentros analizados.</div>", unsafe_allow_html=True)
+        st.image("grafico_pastel_1.png", caption='Gráfico del Barcelona', width=500)
         pass
     elif grafico_seleccionado == 'Mapa':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu mapa</div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Este código genera un mapa interactivo que se visualiza en la imagen siguiente. El mapa ha sido elaborado a partir de una base de datos que contiene información detallada sobre diversas películas. En la representación geográfica se pueden identificar puntos específicos que señalan los lugares donde fueron filmadas, junto con otros datos relevantes asociados a cada producción. Esta visualización permite comprender de manera más intuitiva la distribución espacial de los rodajes y explorar la información vinculada a cada película de forma accesible y dinámica.</div>", unsafe_allow_html=True)
         # Si "mapa_cusco.html" es un archivo HTML (no una imagen), debes mostrarlo con st.components.v1.html
         import streamlit.components.v1 as components
         with open("mapita.html", "r", encoding="utf-8") as f:
@@ -279,5 +280,4 @@ else:
 
         # Mostrar el mapa en Streamlit
         #st_folium(mapa_cusco, width=700, height=500)
-
     
