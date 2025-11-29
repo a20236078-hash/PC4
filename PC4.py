@@ -187,7 +187,7 @@ elif  pagina_seleccionada == 'Experiencia':
     # Puedes cambiar la URL por la de tu video en YouTube o en otra plataforma de video.
 
     # O creamos un botón para ir al enlace del video con button
-    st.markdown(f"<div style='text-align: center;'><a href='https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link' target='_blank'><button>Ver video</button></a></div>", unsafe_allow_html=True) 
+    st.markdown(f"<div style='text-align: center;'><a href='https://drive.google.com/drive/folders/1eL23P38CWx_Fhq3w3YK7R6_Hxv0RkmlZ?usp=sharing' target='_blank'><button>Ver video</button></a></div>", unsafe_allow_html=True) 
 
     # <div style='text-align: center;'><a href='https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link' target='_blank'><button>Ver video</button></a></div>:
     # Esta es una cadena de código HTML.
@@ -274,4 +274,5 @@ else:
         # Mostrar el mapa en Streamlit
         #st_folium(mapa_cusco, width=700, height=500)
     
+
 
